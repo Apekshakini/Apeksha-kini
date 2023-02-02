@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int main() {
+   int n,c,i,d,j,t,ch;
+    cout<<"How many test cases?"<<endl;
+    cin>>t;
+    for(j=0;j<t;j++){
+        do{
+         cout<<"Enter the current volume"<<endl;
+         cin>>n;
+         cout<<"If you want increase the volume press 1 and if you want down the voulme press0"<<endl;
+         cin>>c;
+         if(c==1){
+            cout<<"What number do you want to increase the volume to?"<<endl;
+            cin>>i;
+            cout<<i-n<<"Steps increased"<<endl;
+
+         }
+         else if(c==0){
+            cout<<"What number do you want to decrease the volume to?"<<endl;
+            cin>>d;
+            cout<<n-d<<"Steps decreased"<<endl;
+         }
+         else{
+         cout<<"Invalid choice"<<endl;
+         }
+          cout<<"I you want to continue press 1 otherwise 0"<<endl;
+         cin>>ch;
+        }while(ch);
+        if(ch==0){
+            exit(0);
+        }
+    }
+return 0;
+}

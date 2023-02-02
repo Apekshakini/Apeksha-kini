@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class Dog {
+public:
+string petname;
+    
+    void printname()
+    {
+        cout << "Petname is:" << petname<<endl;
+    }
+};
+class Puppy{
+    
+    public:string puppyname;
+    void printname()
+    {
+        cout<<"puppyname is:"<<puppyname;
+        
+    }
+};
+int main()
+{
+    Dog obj1;
+    obj1.petname = "Chimmi";
+    obj1.printname();
+    Puppy obj2;
+    obj2.puppyname="Tedu";
+    obj2.printname();
+    return 0;
+}
